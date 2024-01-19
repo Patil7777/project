@@ -4,6 +4,7 @@ RUN source ~/.bashrc
 RUN nvm install node 
 CMD git clone https://github.com/shubhamkalsait/devops-fullstack-app.git
 WORKDIR /root/devops-fullstack-/fronted/
+COPY package* .json ./root/devops-fullstack-/fronted/app
 RUN npm install
-RUN npm start
+CMD npm start
 EXPOSE 3000
