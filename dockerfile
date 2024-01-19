@@ -1,4 +1,4 @@
-FROM node:12.18-alphine
+FROM centos:7
 ADD curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh |
 RUN source ~/.bashrc   
 RUN nvm install node 
