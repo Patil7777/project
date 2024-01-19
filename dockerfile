@@ -1,5 +1,5 @@
 FROM centos:7
-ADD curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh |
+ADD  https://raw.githubusercontent.com/creationix/nvm/master/install.sh |
 RUN source ~/.bashrc   
 RUN nvm install node 
 CMD git clone https://github.com/shubhamkalsait/devops-fullstack-app.git
