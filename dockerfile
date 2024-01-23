@@ -1,8 +1,9 @@
 FROM centos:7
 RUN author=shubham
-ADD  https://raw.githubusercontent.com/creationix/nvm/master/install.sh |
-RUN source ~/.bashrc
-RUN nvm install node
+RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash -
+RUN yum install nodejs -y
+RUN yum install npm -y
+RUN yum install curl git -y 
 WORKDIR /
 RUN git clone https://github.com/shubhamkalsait/devops-fullstack-app.git
 WORKDIR /root/devops-fullstack-/fronted/
