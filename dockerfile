@@ -6,7 +6,7 @@ RUN yum install npm -y
 RUN yum install curl git -y 
 WORKDIR /
 RUN git clone https://github.com/shubhamkalsait/devops-fullstack-app.git
-WORKDIR /root/devops-fullstack-/fronted/
-RUN npm install 
+WORKDIR /devops-fullstack-/fronted/
 EXPOSE 3000
+RUN npm install
 CMD npm start
