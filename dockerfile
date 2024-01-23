@@ -9,5 +9,4 @@ RUN git clone https://github.com/shubhamkalsait/devops-fullstack-app.git
 WORKDIR /root/devops-fullstack-/fronted/
 RUN npm install 
 EXPOSE 3000
-CMD ["npm", "start"]
-
+CMD npm start
